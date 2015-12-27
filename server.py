@@ -13,10 +13,10 @@ while True:
     request = clientConn.recv(1024)
     print request
     
+    file = open("hello.html")
     httpResponse = """\
 HTTP/1.1 200 OK
 
-Hello, World!
-"""
+"""+file.read()
     clientConn.sendall(httpResponse)
     clientConn.close()
