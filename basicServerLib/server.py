@@ -18,8 +18,7 @@ class Server(object):
            httpResponse = """\
 HTTP/1.1 200 OK
 
-Hello, World!
-"""
+""" + self.msg 
            clientConn.sendall(httpResponse)
            clientConn.close()
         

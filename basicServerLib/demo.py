@@ -1,4 +1,4 @@
 from server import Server
 
-demo = Server("Hello World")
-demo.listen('',3000)
+demo = Server("Hello")
+demo.listen('0.0.0.0',3000)
